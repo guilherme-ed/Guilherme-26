@@ -110,7 +110,7 @@ div#social {
   justify-content: center;
   align-items: center;
   font-size: 1.6em;
-  gap: 2em;
+  gap: 1em;
   margin-top: 15px;
 }
 
@@ -143,24 +143,25 @@ article h2 {
 #video-container {
   position: relative;
   width: 100%;
-  margin: auto;
+  max-width: 800px;
+  margin: 0;
   overflow: hidden;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16 / 9;
 }
 
 #video-container iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 #skills-container {
   display: grid;
-  grid-template-columns: 2, 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  min-width: 0;
 }
 
 #skills-container h2 {
@@ -273,7 +274,7 @@ footer a:hover {
   color: var(--destaque-inverso);
 }
 
-@media(min-width: 768px) {
+@media(min-width: 1200px) {
   
   main {
     grid-template-columns: auto 300px 1fr auto;
@@ -288,10 +289,15 @@ footer a:hover {
 
   section#detalhes {
     grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
   }
-  
+
   #skills-container {
-    grid-template-columns: 1fr 1fr;
+    grid-column: 3 / 5;
+    
+    
   }
 
   #projetos-container .projeto {
@@ -307,5 +313,31 @@ footer a:hover {
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
+  }
+
+  #video-container {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    margin-left: 0px ;
+    
+  }
+
+  #video-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+    
+  }
+
+  .formacao-container {
+    grid-column: 1 / -1;
+  }
+
+    section#detalhes article:has(#formacao-container),
+  section#detalhes article:has(#projetos-container) {
+    grid-column: 1 / -1;
   }
 }
