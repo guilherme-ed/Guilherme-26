@@ -85,6 +85,7 @@ section#ficha {
   padding: 50px;
   border-radius: 8px;
   grid-column: 2;
+  font-size: 1.1em;
 }
 
 section#ficha img.foto {
