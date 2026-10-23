@@ -88,7 +88,7 @@ section#ficha {
 }
 
 section#ficha img.foto {
-  width: 260px;
+  width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
   overflow: hidden;
@@ -146,7 +146,7 @@ article h2 {
 #video-container {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0;
   overflow: hidden;
   aspect-ratio: 16 / 9;
