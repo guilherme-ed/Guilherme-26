@@ -85,8 +85,7 @@ section#ficha {
   padding: 20px;
   border-radius: 8px;
   grid-column: 2;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 section#ficha img.foto {
@@ -129,8 +128,7 @@ div#social a:hover {
 
 section#detalhes {
   grid-column: 2;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 article {
