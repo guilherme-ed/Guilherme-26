@@ -284,7 +284,9 @@ footer a:hover {
   }
 
   main {
-    grid-template-columns: auto 300px 1fr auto;
+    grid-template-columns: auto 300px minmax(0, 1000px) 1fr;
+    max-width: 1500px;
+    margin: 20px auto;
   }
 
   section#ficha {
