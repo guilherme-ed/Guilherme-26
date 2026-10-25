@@ -87,17 +87,22 @@ section#ficha {
   grid-column: 2;
 }
 
-section#ficha img.foto {
+section#ficha .foto-container {
   width: 200px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 50%;
+  height: 200px;
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto 15px;
+}
+
+section#ficha img.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 5%;
   display: block;
-  margin: auto;
-  margin-bottom: 15px;
 }
 
 section#ficha h1 {
