@@ -258,6 +258,18 @@ article h2 {
   cursor: pointer;
 }
 
+#projetos-container .link-projeto {
+  color: var(--destaque);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+#projetos-container .link-projeto:hover {
+    color: var(--destaque-inverso); /* Cor ao passar o mouse */
+    text-decoration: underline;
+}
+
 #projetos-container .foto {
   width: 100%;
   aspect-ratio: 16/9;
